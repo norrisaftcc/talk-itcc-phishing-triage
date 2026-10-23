@@ -21,6 +21,9 @@ You do not need to be a programmer. You need to run one command.
 | `samples/fake-legit.eml` | A made-up normal email, for contrast. |
 | `.gitignore` | Stops git from tracking real emails (`real/`), secrets (`*.env`), and Outlook exports (`*.pst`, `*.msg`). |
 | `TEST-OUTPUT.md` | The real output of the script on both samples. |
+| `AGENTS.md` | Rules for an AI assistant in the codespace: plain English, no secrets, never suggest clicking a link from a sample. |
+| `.devcontainer/devcontainer.json` | Tells Codespaces to use a Python 3 image. It installs nothing extra. |
+| `PRESENTER-PR-STEPS.md` | For the presenter: how to set up the template and the demo pull request before the talk. |
 
 All sample emails use reserved example domains (`example.com`, `example.net`, `example.org`).
 They do not name real people or real companies.
@@ -64,17 +67,22 @@ and emails with many Authentication-Results headers from different servers.
   several Authentication-Results headers. Only trust the one added by your own mail server.
 - The URL pattern is simple. It can miss links or include extra characters.
 - It does not open attachments, follow links, or check reputation lists.
+- It may fail on unusual character sets in real emails.
+- Not covered: the script does not read `Received` headers (the servers the email passed through).
 - **The AI can be wrong about headers.** It can misread a value or state a guess as fact.
   Always check what it says against the report and the runbook.
 
 ## AI use
 
-- **Tool:** An AI coding assistant (Claude) helped build this kit.
-- **What it produced:** First drafts of the script, the sample emails, the runbook, the prompt, and this README.
-- **What a human checked:** The presenter must review every file before the talk.
-  Check that the script output matches the samples, that the runbook steps match good
-  practice at your workplace, and that no sample uses a real domain or brand.
-  <!-- Presenter: replace this line with who reviewed it and when. -->
+- **Tool:** Claude (Anthropic).
+- **Produced:** First drafts of the script, runbook, prompt, and samples.
+- **Verified:** Script tested on two sample emails; output in `TEST-OUTPUT.md`.
+- **Reviewed by:** [presenter, date]
+
+## Use this kit as a template
+
+The presenter marks this repository as a template (**Settings > General > Template repository**).
+To get your own copy, select **Use this template > Create a new repository**.
 
 ## Privacy rule
 

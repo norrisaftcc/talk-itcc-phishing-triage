@@ -22,7 +22,7 @@ Please do these four things:
 3. Give your overall view: likely phishing, likely legitimate, or unsure.
    Give your reasons.
 4. Say clearly what you are unsure of. Say what you cannot know from this
-   report alone (for example, the full Received chain or the attachment contents).
+   report alone (for example, which mail servers handled the email, or the attachment contents).
 
 Rules:
 - Use short sentences. Do not use jargon without explaining it.
