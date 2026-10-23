@@ -28,6 +28,8 @@ Rules:
 - Use short sentences. Do not use jargon without explaining it.
 - Do not invent header values that are not in the report.
 - If a field says "missing" or "not present", say what that means. Do not guess a value.
+- Never tell me to click a link or open an attachment to check it.
+  Suggest safe checks instead (for example, read the domain in the report).
 
 REPORT:
 <paste the script output here>
@@ -45,3 +47,4 @@ This lets the team review prompt changes the same way they review code changes.
 | Version | Change |
 |---|---|
 | 1.0 | First version. |
+| 1.1 | Added a rule: the AI must not suggest clicking links or opening attachments. Reason: an AI assistant could suggest "visit the link to confirm". A beginner may follow that advice literally. That is unsafe. |
