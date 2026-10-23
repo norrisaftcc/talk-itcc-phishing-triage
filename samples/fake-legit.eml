@@ -1,0 +1,42 @@
+Return-Path: <it-helpdesk@example.com>
+Received: from mail.example.com (mail.example.com [198.51.100.10])
+	by mx.example.com with ESMTP id 9b1d2e; Wed, 21 Oct 2026 10:02:11 -0400
+Authentication-Results: mx.example.com;
+	spf=pass smtp.mailfrom=example.com;
+	dkim=pass header.d=example.com;
+	dmarc=pass header.from=example.com
+From: "IT Help Desk" <it-helpdesk@example.com>
+To: student@example.com
+Subject: Lab maintenance on Friday
+Date: Wed, 21 Oct 2026 10:02:05 -0400
+Message-ID: <fake-0002@mail.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="BOUNDARY-456"
+
+--BOUNDARY-456
+Content-Type: text/plain; charset="utf-8"
+
+FAKE EMAIL FOR TEACHING.
+
+Hello,
+
+The computer lab will be closed Friday from 2 PM to 4 PM for maintenance.
+You do not need to do anything. The schedule is posted here:
+https://www.example.com/it/lab-schedule
+
+Thank you,
+IT Help Desk
+
+--BOUNDARY-456
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>FAKE EMAIL FOR TEACHING.</p>
+<p>Hello,</p>
+<p>The computer lab will be closed Friday from 2 PM to 4 PM for maintenance.
+You do not need to do anything. The schedule is posted here:</p>
+<p><a href="https://www.example.com/it/lab-schedule">www.example.com/it/lab-schedule</a></p>
+<p>Thank you,<br>IT Help Desk</p>
+</body></html>
+
+--BOUNDARY-456--

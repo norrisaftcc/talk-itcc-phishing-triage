@@ -1,0 +1,13 @@
+# Real user emails never go in the repository.
+real/
+
+# Secrets and environment files.
+*.env
+.env
+
+# Mailbox exports from Outlook. They can hold many real emails.
+*.pst
+*.msg
+
+# Python cache files.
+__pycache__/
