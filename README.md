@@ -23,10 +23,11 @@ You do not need to be a programmer. You need to run one command.
 | `TEST-OUTPUT.md` | The real output of the script on both samples. |
 | `AGENTS.md` | Rules for an AI assistant in the codespace: plain English, no secrets, never suggest clicking a link from a sample. |
 | `.devcontainer/devcontainer.json` | Tells Codespaces to use a Python 3 image. It installs nothing extra. |
-| `PRESENTER-PR-STEPS.md` | For the presenter: how to set up the template and the demo pull request before the talk. |
 
 All sample emails use reserved example domains (`example.com`, `example.net`, `example.org`).
 They do not name real people or real companies.
+
+Presenter steps live outside this repo.
 
 ## How to run it in GitHub Codespaces (browser only)
 
@@ -77,6 +78,8 @@ and emails with many Authentication-Results headers from different servers.
 - **Tool:** Claude (Anthropic).
 - **Produced:** First drafts of the script, runbook, prompt, and samples.
 - **Verified:** Script tested on two sample emails; output in `TEST-OUTPUT.md`.
+  Gmail menu steps in `runbook.md` checked against Google Help on 2026-10-26.
+  Outlook on the web menu names not checked; the runbook gives none.
 - **Reviewed by:** [presenter, date]
 
 ## Use this kit as a template

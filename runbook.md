@@ -8,8 +8,8 @@ Follow the steps in order. Write down what you find at each step in the ticket.
 1. **Open a ticket.** Record who reported the email, when, and how (button, forward, phone call).
 2. **Ask the user one question:** "Did you click a link, open an attachment, or enter a password?" If yes, go to step 11 now, then come back.
 3. **Get the original email as a file.** Ask the user to use the "Report phishing" button or to forward it *as an attachment* (.eml). A normal forward removes the headers you need.
-   - **Gmail (web):** Open the email. Select **More** (three dots, next to Reply). Select **Show original** to see the headers. On that page, **Download original** saves an .eml file. [VERIFY]
-   - **Outlook on the web:** Open the email. Select **...** (More actions) > **View** > **View message details** to see the headers. Outlook may save a message as .msg, not .eml. The script reads only .eml. [VERIFY]
+   - **Gmail (web):** Open the email. Next to **Reply**, select **More**, then **Show original** to see the full headers. To save the email as an .eml file, select **More** > **Download message**. (Sources, checked 2026-10-26: support.google.com/mail/answer/29436 and support.google.com/mail/answer/9261412)
+   - **Outlook on the web:** Use your mail client's option to show the message details or message source. That shows the headers. If you save the message as a file, check the file type. The script reads only .eml. (Menu names for Outlook on the web are not checked, so this step gives none.)
    - If you cannot get an .eml file, copy the headers from these windows and read steps 5–7 by hand.
 4. **Run the header report.** In Codespaces, run:
    `python3 scripts/parse_headers.py path/to/email.eml`

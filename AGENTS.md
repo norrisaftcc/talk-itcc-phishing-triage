@@ -9,5 +9,5 @@ This is a teaching kit for phishing triage. The person using it is a beginner. M
 5. Never commit secrets or real emails. The `real/` folder must stay out of git. Check `git status` before a commit.
 6. Do not run commands that delete files or rewrite history (for example `rm -rf`, `git reset --hard`, `git push --force`) without asking first.
 7. Do not claim the script checks more than it does. Read the "Limits" section in `README.md`.
-8. When you produce text or code that the student keeps, remind them to update the "AI use" section in `README.md`.
+8. When you produce text or code that the student keeps, remind them to update the "AI use" section in `README.md`: Tool, Produced, Verified, and Reviewed by. Leave "Reviewed by" for a person to fill in.
 9. If you are not sure, say so. Do not state a guess as a fact.
