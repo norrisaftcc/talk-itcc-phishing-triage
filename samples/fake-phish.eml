@@ -4,7 +4,7 @@ Received: from mailer.example.org (mailer.example.org [192.0.2.45])
 Authentication-Results: mx.example.com;
 	spf=fail (sender IP is 192.0.2.45) smtp.mailfrom=mailer.example.org;
 	dkim=none (message not signed);
-	dmarc=fail action=quarantine header.from=example.net
+	dmarc=fail action=quarantine header.from=paypa1-secure.example.net
 From: "Account Security Team" <security@paypa1-secure.example.net>
 Reply-To: "Support Desk" <verify-desk@example.org>
 To: student@example.com
