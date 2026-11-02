@@ -24,4 +24,10 @@ Follow the steps in order. Write down what you find at each step in the ticket.
 11. **Contain, if the user clicked or entered a password.** Follow your organization's policy. This usually means: reset the password, end active sessions, check MFA, and escalate to security.
 12. **Close the loop.** Tell the user the result and thank them for reporting. Record the decision and the evidence in the ticket. Send it to the security team if your policy says so.
 
+## Glossary
+
+- **SPF:** the sending domain's list of servers that are allowed to send its mail.
+- **DKIM:** a signature that shows the message was not changed and names the signing domain.
+- **DMARC:** the domain's rule for what to do when SPF or DKIM fails and the From domain does not match.
+
 *Teaching material. Your organization's policy always comes first.*

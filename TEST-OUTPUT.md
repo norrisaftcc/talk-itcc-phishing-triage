@@ -1,7 +1,7 @@
 # Test Output
 
 Real output of `scripts/parse_headers.py`, captured on 2026-10-23 with Python 3.13.17 on Linux.
-Result: **PASS**. Each value was checked by hand against the .eml file.
+Result: **PASS**. Each value was checked by reading the .eml file against the output.
 
 ## Test 1: `samples/fake-phish.eml`
 

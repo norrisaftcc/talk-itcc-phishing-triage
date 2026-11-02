@@ -27,8 +27,6 @@ You do not need to be a programmer. You need to run one command.
 All sample emails use reserved example domains (`example.com`, `example.net`, `example.org`).
 They do not name real people or real companies.
 
-Presenter steps live outside this repo.
-
 ## How to run it in GitHub Codespaces (browser only)
 
 You do not need to install anything on your computer.
@@ -52,7 +50,7 @@ Note: free Codespaces hours are limited each month. Stop the codespace when you 
 ## How it was tested
 
 - Ran the script on both sample emails with Python 3.13 on Linux.
-- Checked by hand that each value in the report matches the .eml file.
+- Checked each value in the report by reading the .eml file against the output.
 - Checked that the phishing sample shows four red flags: SPF fail, DMARC fail,
   Reply-To domain mismatch, and link text / link target mismatch.
 - Checked that the legitimate sample shows no red flags.
@@ -84,8 +82,8 @@ and emails with many Authentication-Results headers from different servers.
 
 ## Use this kit as a template
 
-The presenter marks this repository as a template (**Settings > General > Template repository**).
-To get your own copy, select **Use this template > Create a new repository**.
+Use this template to make your own copy.
+Select **Use this template > Create a new repository**.
 
 ## Privacy rule
 
