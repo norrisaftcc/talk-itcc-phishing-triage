@@ -1,0 +1,42 @@
+Return-Path: <bounce-7731@mailer.example.org>
+Received: from mailer.example.org (mailer.example.org [192.0.2.45])
+	by mx.example.com with ESMTP id 4f2a9c; Tue, 20 Oct 2026 08:14:02 -0400
+Authentication-Results: mx.example.com;
+	spf=fail (sender IP is 192.0.2.45) smtp.mailfrom=mailer.example.org;
+	dkim=none (message not signed);
+	dmarc=fail action=quarantine header.from=paypa1-secure.example.net
+From: "Account Security Team" <security@paypa1-secure.example.net>
+Reply-To: "Support Desk" <verify-desk@example.org>
+To: student@example.com
+Subject: URGENT: Your account will be suspended in 24 hours
+Date: Tue, 20 Oct 2026 08:13:55 -0400
+Message-ID: <fake-0001@mailer.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="BOUNDARY-123"
+
+--BOUNDARY-123
+Content-Type: text/plain; charset="utf-8"
+
+FAKE EMAIL FOR TEACHING. Not a real company.
+
+Dear Customer,
+
+We detected unusual sign-in activity on your account.
+Verify your identity within 24 hours or your account will be suspended:
+http://login.paypa1-secure.example.net/verify?id=88421
+
+Account Security Team
+
+--BOUNDARY-123
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>FAKE EMAIL FOR TEACHING. Not a real company.</p>
+<p>Dear Customer,</p>
+<p>We detected unusual sign-in activity on your account.
+Verify your identity within 24 hours or your account will be suspended:</p>
+<p><a href="http://login.paypa1-secure.example.net/verify?id=88421">www.example.com/account/verify</a></p>
+<p>Account Security Team</p>
+</body></html>
+
+--BOUNDARY-123--
