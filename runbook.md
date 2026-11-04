@@ -28,6 +28,6 @@ Follow the steps in order. Write down what you find at each step in the ticket.
 
 - **SPF:** the sending domain's list of servers that are allowed to send its mail.
 - **DKIM:** a signature that shows the message was not changed and names the signing domain.
-- **DMARC:** the domain's rule for what to do when SPF or DKIM fails and the From domain does not match.
+- **DMARC:** the domain's rule for what to do with mail when neither SPF nor DKIM passes for the From domain.
 
 *Teaching material. Your organization's policy always comes first.*
